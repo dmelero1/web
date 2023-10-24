@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/dm.jpg" alt="logo" width="150"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow2">
+            <div class="px-4">
+                <h1 class="text-center bg-rojo-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-4">
+                <hr>
+            </div>
+            <div class="pj-4">
+                <div id="multimedia" class="py-4">
+                    <h2 class="text-center">MULTIMEDIA</h2>
+                    <h3>Video:</h3>
+                    <video autoplay controls width="100%">
+                        <source src="recursos/OcupasNambroca.mp4" type="video/mp4">
+                        <source src="recursos/OcupasNambroca.ogv" type="video/ogv">
+                        <source src="recursos/OcupasNambroca.webm" type="video/webm">
+                    </video>
+                    <h3>Audio:</h3>
+                    <audio controls>
+                        <source src="recursos/audiodmm.mp3" type="audio/mp3">
+                        <source src="recursos/audiodmm.ogg" type="audio/ogg">
+                        <source src="recursos/audiodmm.wav" type="audio/wav">
+                    </audio>
+                    <h3>Video mediante iframe:</h3>
+
+                    <div class="video"></div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ALtCgW3V9oU?si=a72TkINtEfSX21DD"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+        </main>
+        <footer>
+            <h1 class="bg-rojo-o text-center text-white py-3">&copy; Daniel Melero</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>

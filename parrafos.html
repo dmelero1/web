@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container shadow">
+        <header>
+            <div class="row align-items-center">
+                <div class="col-3"><img src="img/dm.jpg" alt="logo" width="150"></div>
+                <div class="col-9">
+                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
+                    <nav id="menu">
+                        <ul class="text-right">
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="parrafos.html">
+                                    Párrafos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="enlaces.html">
+                                    Enlaces
+                                </a>
+                            </li>
+                            <li>
+                                <a href="listas.html">
+                                    Listas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tablas.html">
+                                    Tablas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="formularios.html">
+                                    Formularios
+                                </a>
+                            </li>
+                            <li>
+                                <a href="multimedia.html">
+                                    Multimedia
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+
+        </header>
+        <main class="shadow">
+            <div class="px-4">
+                <h1 class="text-center bg-rojo-o text-white py-3">HTML5 & CSS3</h1>
+            </div>
+            <div class="px-4">
+                <hr>
+            </div>
+            <div class="pj-4">
+            <div id="parrafos" class="py-4">
+                <h2 class="text-center">PÁRRAFOS</h2>
+                <h1>PRESENTACIÓN</h1>
+                <p>Me llamo Daniel Melero y tengo 18 años.</p>
+                <p>Vivo en Nambroca con mis padres y mi hermana, estudio un grado superior en el IES Azarquiel, me gusta mucho el futbol y soy muy del Real Madrid.</p>
+                <p>He decidido coger este grado debido a que me interesa la informatica. <br>Ademas, este grado tiene muchas salidas en el futuro.</p>
+                <h2 class="bg-rojo-o">Verano 2023</h2> 
+                <h3 class="bg-orange">Junio</h5>
+                <p>El mes de junio empezó haciendo la <strong>EVAU</strong> la segunda semana de junio. Tras salir bastante contento de la evau me fui de vacaciones una semana a Alicante con mi familia.
+                <h3 class="bg-orange">Julio</h5>
+                <p>El mes de julio me fui con mis amigos de vaciones una semana a la playa, allí fuimos al, <em>Puro Latino</em>, un festival en Torremolinos donde vimos a los mejores cantantes como son Quevedo, Eladio, Mora, Myke Towers, etc.. </p>
+                <p>Aunque las matemáticas no me gustan, aprendí ecuaciones de segundo grado como esta:</p>
+                <p>2x<sup>2</sup> - 4x</sub> + 6 = 0</p>
+                <p>Esta ecuación tiene dos soluciones para <span class="text-orange">x : <span  class="text-orange">x = 1<span class="text-orange"> ; x = 2</div>
+            </div>
+          </div>
+        </main>
+        <footer>
+            <h1 class="bg-rojo-o text-center text-white py-3">&copy; Daniel Melero</h1>
+        </footer>
+    </div>
+    <script>
+        function opendrawer() {
+            document.getElementById('menu').style.display = 'block';
+            document.getElementById('menu').style.witdh = '100%';
+        }
+    </script>
+</body>
+
+</html>
